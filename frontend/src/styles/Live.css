@@ -1,0 +1,72 @@
+.live-match-container {
+  padding: 1rem;
+  max-width: 48rem; /* ~768px */
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.match-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.teams-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  text-align: center;
+}
+
+@media(min-width: 768px) {
+  .teams-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.team-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.team-name {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.match-status {
+  margin-top: 1.5rem;
+  font-weight: bold;
+  color: #2563eb; /* blue */
+}
+
+.match-winner {
+  margin-top: 0.25rem;
+  font-weight: 600;
+  color: #16a34a; /* green */
+}
+
+.events-container {
+  margin-top: 1.5rem;
+}
+
+.events-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.events-list {
+  max-height: 15rem;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  background-color: #f3f4f6; /* light gray */
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+}
+
+.events-list li {
+  margin-bottom: 0.25rem;
+}
